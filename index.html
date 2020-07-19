@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin-top: 70px;
+        background: #333;
+        color: #fff;
+      }
+    </style>
+    <title>Weight Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 offset-md-1">
+          <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+          <form>
+            <div class="row form-group">
+              <input
+                id="unitInput"
+                type="number"
+                class="form-control form-control-lg col-10"
+                placeholder="Enter..."
+              />
+              <select
+                name="unit"
+                id="unit"
+                class="form-control form-control-lg col-2"
+              >
+                <option value="kg">kg</option>
+                <option value="oz">oz</option>
+                <option value="lbs">lbs</option>
+                <option value="g">g</option>
+              </select>
+            </div>
+          </form>
+          <div id="output">
+            <div class="card bg-primary card-body mb-2">
+              <div class="card-block">
+                <h4 id="unitHeading1"></h4>
+                <div id="calc1"></div>
+              </div>
+            </div>
+            <div class="card bg-success card-body mb-2">
+              <div class="card-block">
+                <h4 id="unitHeading2"></h4>
+                <div id="calc2"></div>
+              </div>
+            </div>
+            <div class="card bg-danger card-body mb-2">
+              <div class="card-block">
+                <h4 id="unitHeading3"></h4>
+                <div id="calc3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
