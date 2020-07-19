@@ -16,6 +16,17 @@ document.querySelector("#unitInput").addEventListener("input", function (e) {
   }
 });
 
+document.querySelector("#unit").addEventListener("click", function () {
+  document.querySelector("#output").style.visibility = "hidden";
+  document.querySelector("#calc1").innerHTML = "";
+  document.querySelector("#unitHeading1").textContent = "";
+  document.querySelector("#calc2").innerHTML = "";
+  document.querySelector("#unitHeading2").textContent = "";
+  document.querySelector("#calc3").innerHTML = "";
+  document.querySelector("#unitHeading3").textContent = "";
+  document.querySelector("#unitInput").value = 0;
+});
+
 function convertKg(weight) {
   //kg to pounds
   document.querySelector("#calc1").innerHTML = weight * 2.2046;
